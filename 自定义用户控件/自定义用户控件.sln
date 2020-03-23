@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "自定义用户控件", "自定义用户控件\自定义用户控件.csproj", "{772F6374-27F2-4C64-9ACB-BE84761FF46F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{772F6374-27F2-4C64-9ACB-BE84761FF46F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772F6374-27F2-4C64-9ACB-BE84761FF46F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772F6374-27F2-4C64-9ACB-BE84761FF46F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772F6374-27F2-4C64-9ACB-BE84761FF46F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B4AE933-9C19-42A0-A749-11ABD414AD93}
+	EndGlobalSection
+EndGlobal
