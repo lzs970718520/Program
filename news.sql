@@ -29,6 +29,6 @@ select *,case when N_type='1' then '体育新闻'
 			  when N_type='4' then '时事新闻'
 			  when N_type='5' then '其他新闻' end as XWLX
 		,case when n_state='1' then '未审核' 
-			  when n_state='1' then '已审核' end as SHZT
+			  when n_state='2' then '已审核' end as SHZT
 from NewsInfo
 

@@ -47,5 +47,10 @@ namespace DALlzs
             }
             return new DBhelper().Get(sql);
         }
+        public bool AddNewslzs(NewsInfolzs n) {
+            string sql = string.Format(@"insert into NewsInfo valuesinsert into NewsInfo 
+                                        values('{0}','{1}','{2}','{3}',default,'1',null)",n.n_name,n.N_type,n.n_title,n.n_content);
+            return new DBhelper().Excute(sql);
+        }
     }
 }

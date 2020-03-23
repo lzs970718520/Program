@@ -21,7 +21,11 @@ namespace BLLlzs
         }
         public DataTable CheckGridlzs(NewsInfolzs n)
         {
-            return 
+            return new UserInfoDALlzs().CheckGridlzs(n);
+        }
+        public bool AddNewslzs(NewsInfolzs n)
+        {
+            return new UserInfoDALlzs().AddNewslzs(n);
         }
     }
 }

@@ -29,7 +29,27 @@ namespace 新闻发布管理系统
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            NewsInfolzs n = new NewsInfolzs();
+            n.N_type =Convert.ToInt32( DropDownList1.SelectedIndex.ToString());
+            n.n_title = this.TextBox1.Text;
+            n.n_content = this.TextBox2.Text;
+            DataTable dt = new UserInfoBLLlzs().CheckGridlzs(n);
+            this.GridView1.DataSource = dt;
+            this.GridView1.DataBind();
+        }
 
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            NewsInfolzs n = new NewsInfolzs();
+            n.n_name = Request.QueryString["user"];
+            n.n_title = this.TextBox1.Text;
+            n.n_content = this.TextBox2.Text;
+            bool flag = new UserInfoBLLlzs().AddNewslzs(n);
+        }
+
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            
         }
     }
 }

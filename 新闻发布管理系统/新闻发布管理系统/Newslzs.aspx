@@ -26,9 +26,9 @@
             新闻内容：<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             <br />
             <asp:Button ID="Button1" runat="server" Text="查询" OnClick="Button1_Click" />
-            <asp:Button ID="Button2" runat="server" Text="发布新闻" />
+            <asp:Button ID="Button2" runat="server" Text="发布新闻" OnClick="Button2_Click" />
             <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="n_id" OnRowCommand="GridView1_RowCommand">
                 <Columns>
                     <asp:BoundField HeaderText="发布人" DataField="n_name" />
                     <asp:BoundField HeaderText="新闻类型" DataField="XWLX" />
@@ -36,9 +36,10 @@
                     <asp:BoundField HeaderText="新闻内容" DataField="n_content" />
                     <asp:BoundField HeaderText="发布时间" DataField="n_time" />
                     <asp:BoundField HeaderText="审核状态" DataField="SHZT" />
-                    <asp:TemplateField>
+                    <asp:TemplateField HeaderText="新闻处理">
                         <ItemTemplate>
-                            
+                            <asp:LinkButton runat="server" Text="审核" CommandArgument="sp"></asp:LinkButton>
+                            <asp:LinkButton runat="server" Text="删除" CommandArgument="del"></asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
