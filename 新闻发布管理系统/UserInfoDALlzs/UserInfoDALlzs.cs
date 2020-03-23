@@ -39,11 +39,11 @@ namespace DALlzs
                 sql += string.Format("and N_type='{0}'",n.N_type);
             }
             if (n.n_title != "") {
-                sql += string.Format("and n_title like '{0}'",n.n_title);
+                sql += string.Format("and n_title like '%{0}%'",n.n_title);
             }
             if (n.n_content != "")
             {
-                sql += string.Format("and n_content like '{0}'", n.n_content);
+                sql += string.Format("and n_content like '%{0}%'", n.n_content);
             }
             return new DBhelper().Get(sql);
         }

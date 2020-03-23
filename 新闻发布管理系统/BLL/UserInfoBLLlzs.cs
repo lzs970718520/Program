@@ -19,5 +19,9 @@ namespace BLLlzs
         {
             return new UserInfoDALlzs().LoadGrid();
         }
+        public DataTable CheckGridlzs(NewsInfolzs n)
+        {
+            return 
+        }
     }
 }
